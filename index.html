@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BookShelf</title>
+  </head>
+  <body>
+    <h1 class="h">Books Library</h1>
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>ُُEnter Book Details</p>
+        <form action="">
+          <label for="bname">Book Name:</label>
+          <input
+            type="text"
+            id="bname"
+            name="BookName"
+            placeholder="Book Name: "
+          />
+          <label for="authname">Author Name:</label>
+          <input
+            type="text"
+            id="authname"
+            name="authorname"
+            placeholder="Book Author: "
+          />
+          <label for="btype">Book Type:</label>
+          <input
+            type="text"
+            id="btype"
+            name="booktype"
+            placeholder="arabic, english, kids: "
+          />
+          <label for="bimg">Book Image:</label>
+          <input type="file" id="bimg" name="bookimage" accept="image/*" />
+
+          <input type="button" value="Add" id="addBtn" />
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body> 
+</html>
